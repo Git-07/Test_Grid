@@ -40,6 +40,7 @@ public class Class1 {
 //		options.addArguments("start-maximized");
 		//dc.setCapability(ChromeOptions.CAPABILITY, options);
 		driver = new RemoteWebDriver(new URL ("http://mohit-PC:4444/wd/hub"),dc);
+		driver.manage().window().maximize();
 		driver.get("https://google.com/");		
 		Thread.sleep(2000);
 		driver.close();
